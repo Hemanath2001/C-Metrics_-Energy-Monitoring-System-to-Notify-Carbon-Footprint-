@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #012043;
+    font-weight: bold;
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #102c57;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-bottom: whitesmoke;
+    border-width: 0.5px;
+    border-style: solid;
+  }
+  
+  .topnav .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 65%;
+  }
+  
+  .nav-links a {
+    color: #009bd6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    color: #009bd6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #102c57;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #009bd6;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .content #home_logo {
+    padding: 20px;
+    margin-top: 120px; /* Adjust this value based on the height of your navbar */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 120px; /* Adjust based on navbar height */
+  }
+  
+  .content p {
+    color: #009bd6;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* analytics page */
+  /* Department 1 */
+  #analytics_content, #dept1_overall_content, #dept1_M1_content, #dept1_M2_content, #dept1_M3_content, #dept2_overall_content,  #dept2_M1_content, #dept2_M2_content, #dept2_M3_content, #dept3_overall_content, #dept3_M1_content, #dept3_M2_content, #dept3_M3_content, #overall_analytics_content, #dept1_m1_analytics_content, #dept1_m2_analytics_content, #dept1_m3_analytics_content, #dept2_m1_analytics_content, #dept2_m2_analytics_content, #dept2_m3_analytics_content, #dept3_m1_analytics_content, #dept3_m2_analytics_content, #dept3_m3_analytics_content, #dept1_overall_analytics_content, #dept2_overall_analytics_content, #dept3_overall_analytics_content{
+    text-align: center;
+    margin-top: 105px;
+    margin-left:200px ;
+    margin-right: 200px;
+    color:#fff;
+  }
+
+  .dept1_analytics_btn, .dept1_overall_analytics_btn, .dept1_M1_analytics_btn, .dept1_M2_analytics_btn, .dept1_M3_analytics_btn, .dept2_overall_analytics_btn, .dept2_M1_analytics_btn, .dept2_M2_analytics_btn, .dept2_M3_analytics_btn, .dept3_overall_analytics_btn, .dept3_M1_analytics_btn,  .dept3_M2_analytics_btn, .dept3_M3_analytics_btn {
+    margin-top: 40px;
+  }
+
+  .analytics_content a, .dept1_overall_content a, .dept1_M1_content a, .dept1_M2_content a, .dept1_M3_content a, .dept2_overall_content a, .dept2_M1_content a, .dept2_M2_content a, .dept2_M3_content a, .dept3_overall_content a, .dept3_M1_content a,  .dept3_M2_content a, .dept3_M3_content a, .overall_analytics_content a, .dept1_m1_analytics_content a, .dept1_m2_analytics_content a, .dept1_m3_analytics_content a, .dept2_m1_analytics_content a, .dept2_m2_analytics_content a, .dept2_m3_analytics_content a, .dept3_m1_analytics_content a, .dept3_m2_analytics_content a, .dept3_m3_analytics_content a, .dept1_overall_analytics_content a, .dept2_overall_analytics_content a, .dept3_overall_analytics_content a {
+    position: relative;
+    background: #fff;
+    color: #fff;  
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+  }
+  
+  
+  .analytics_content a:hover, .dept1_overall_content a:hover, .dept1_M1_content a:hover, .dept1_M2_content a:hover, .dept1_M3_content a:hover, .dept2_overall_content a:hover, .dept2_M1_content a:hover, .dept2_M2_content a:hover, .dept2_M3_content a:hover, .dept3_overall_content a:hover, .dept3_M1_content a:hover, .dept3_M2_content a:hover, .dept3_M3_content a:hover, .overall_analytics_content a:hover, .dept1_m1_analytics_content a:hover, .dept1_m2_analytics_content a:hover, .dept1_m3_analytics_content a:hover, .dept2_m1_analytics_content a:hover, .dept2_m2_analytics_content a:hover, .dept2_m3_analytics_content a:hover, .dept3_m1_analytics_content a:hover, .dept3_m2_analytics_content a:hover, .dept3_m3_analytics_content a:hover, .dept1_overall_analytics_content a:hover, .dept2_overall_analytics_content a:hover, .dept3_overall_analytics_content a:hover{
+    background: var(--clr);
+    color:var(--clr) ;
+    letter-spacing: 0.25em;
+    box-shadow: 0 0 35px var(--clr);
+  }
+  
+  .analytics_content a:before, .dept1_overall_content a:before, .dept1_M1_content a:before, .dept1_M2_content a:before, .dept1_M3_content a:before, .dept2_overall_content a:before, .dept2_M1_content a:before, .dept2_M2_content a:before, .dept2_M3_content a:before, .dept3_overall_content a:before, .dept3_M1_content a:before, .dept3_M2_content a:before, .dept3_M3_content a:before, .overall_analytics_content a:before, .dept1_m1_analytics_content a:before, .dept1_m2_analytics_content a:before, .dept1_m3_analytics_content a:before, .dept2_m1_analytics_content a:before, .dept2_m2_analytics_content a:before, .dept2_m3_analytics_content a:before, .dept3_m1_analytics_content a:before, .dept3_m2_analytics_content a:before, .dept3_m3_analytics_content a:before, .dept1_overall_analytics_content a:before, .dept2_overall_analytics_content a:before, .dept3_overall_analytics_content a:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #012043;
+  }
+  
+  .analytics_content a span, .dept1_overall_content a span, .dept1_M1_content a span, .dept1_M2_content a span, .dept1_M3_content a span, .dept2_overall_content a span, .dept2_M1_content a span, .dept2_M2_content a span, .dept2_M3_content a span, .dept3_overall_content a span, .dept3_M1_content a span, .dept3_M2_content a span, .dept3_M3_content a span, .overall_analytics_content a span, .dept1_m1_analytics_content a span, .dept1_m2_analytics_content a span, .dept1_m3_analytics_content a span, .dept2_m1_analytics_content a span, .dept2_m2_analytics_content a span, .dept2_m3_analytics_content a span, .dept3_m1_analytics_content a span, .dept3_m2_analytics_content a span, .dept3_m3_analytics_content a span, .dept1_overall_analytics_content a span, .dept2_overall_analytics_content a span, .dept3_overall_analytics_content a span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .Overall_metrics_chart, .dept1_m1_analytics_chart, .dept1_m2_analytics_chart, .dept1_m3_analytics_chart, .dept2_m1_analytics_chart, .dept2_m2_analytics_chart, .dept2_m3_analytics_chart, .dept3_m1_analytics_chart, .dept3_m2_analytics_chart, .dept3_m3_analytics_chart, .dept1_Overall_metrics_chart, .dept2_Overall_metrics_chart, .dept3_Overall_metrics_chart{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+  }
+
+  .Overall_analytics_btn, .dept1_m1_analytics_content_btn, .dept1_m2_analytics_content_btn, .dept1_m3_analytics_content_btn, .dept2_m1_analytics_content_btn, .dept2_m2_analytics_content_btn, .dept2_m3_analytics_content_btn, .dept3_m1_analytics_content_btn, .dept3_m2_analytics_content_btn, .dept3_m3_analytics_content_btn, .dept1_Overall_analytics_btn, .dept2_Overall_analytics_btn, .dept3_Overall_analytics_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  .machine_images{
+    margin-top: 50px;
+  }
+
+  .machine_images div{
+    display: inline-flex;
+    margin-left: 210px;
+  }
+
+  .machine_analytics_btn{
+    font-size: 0.55em;
+  }
+
+  .machine_analytics_btn a{
+    display: inline-flex;
+    margin-left: 210px;
+    margin-top: 20px;
+  }
+
+  /* styling for page Department 1,2,3 overall datas */
+
+  .overalldatas_title, .dept1_overalldatas_title, .dept2_overalldatas_title, .dept3_overalldatas_title,  .dept1_M1_datas_title, .dept1_M2_datas_title, .dept1_M3_datas_title, .dept2_M1_datas_title, .dept2_M2_datas_title, .dept2_M3_datas_title, .dept3_M1_datas_title, .dept3_M2_datas_title, .dept3_M3_datas_title {
+    display: flex;
+    /* justify-content: space-between; */
+  }
+  
+  .overalldatas_title div, .dept1_overalldatas_title div, .dept2_overalldatas_title div, .dept3_overalldatas_title div, .dept1_M1_datas_title div, .dept1_M2_datas_title div, .dept1_M3_datas_title div, .dept2_M1_datas_title div, .dept2_M2_datas_title div, .dept2_M3_datas_title div, .dept3_M1_datas_title div, .dept3_M2_datas_title div, .dept3_M3_datas_title div{
+    background-color: #012043;
+    color: white;
+    height: 80px;
+    width: 505px;
+    margin-top: 0px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap;
+    flex-grow: 1; */
+  }
+  
+  .overalldata_value div, .dept1_overalldata_value div, .dept2_overalldata_value div, .dept3_overalldata_value div, .dept1_M1_data_value div, .dept1_M2_data_value div, .dept1_M3_data_value div, .dept2_M1_data_value div, .dept2_M2_data_value div, .dept2_M3_data_value div, .dept3_M1_data_value div, .dept3_M2_data_value div, .dept3_M3_data_value div{
+    height: 50px;
+    width: 500px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #012043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: #ffc857;
+  }
+  
+  #overallcarbonfootprint_value, #dept1_overallcarbonfootprint_value, #dept2_overallcarbonfootprint_value, #dept3_overallcarbonfootprint_value, #dept1_M1_carbonfootprint_value, #dept1_M2_carbonfootprint_value, #dept1_M3_carbonfootprint_value, #dept2_M1_carbonfootprint_value, #dept2_M2_carbonfootprint_value, #dept2_M3_carbonfootprint_value, #dept3_M1_carbonfootprint_value, #dept3_M2_carbonfootprint_value, #dept3_M3_carbonfootprint_value{
+    color: #db3a34;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+  }
+
+  #overall_carbonfootprint_unit, #dept1_overallcarbonfootprint_value_unit, #dept1_M1_carbonfootprint_value_unit, #dept1_M2_carbonfootprint_value_unit, #dept1_M3_carbonfootprint_value_unit, #dept2_overallcarbonfootprint_value_unit, #dept2_M1_carbonfootprint_value_unit, #dept2_M2_carbonfootprint_value_unit, #dept2_M3_carbonfootprint_value_unit, #dept3_overallcarbonfootprint_value_unit, #dept3_M1_carbonfootprint_value_unit, #dept3_M2_carbonfootprint_value_unit, #dept3_M3_carbonfootprint_value_unit{
+    color: #db3a34;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .overalldata_value_unit div, .dept1_overalldata_value_unit div, .dept1_M1_data_value_unit div, .dept1_M2_data_value_unit div, .dept1_M3_data_value_unit div, .dept2_overalldata_value_unit div, .dept2_M1_data_value_unit div, .dept2_M2_data_value_unit div, .dept2_M3_data_value_unit div, .dept3_overalldata_value_unit div, .dept3_M1_data_value_unit div, .dept3_M2_data_value_unit div, .dept3_M3_data_value_unit div {
+    /* height: 0px ; */
+    width: 500px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #012043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: #ffc857;
+
+  }
+
+  
+
+
+  /* styling for page machine 1,2,3 */
+
+  /* .dept1_M1_datas_title {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dept1_M1_datas_title div{
+    background-color: #012043;
+    color: white;
+    height: 100px;
+    width: 200px;
+    margin-top: 0px;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+  }
+  
+  .dept1_M1_data_value{
+    height: 100px;
+    width: 502.5px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #012043;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    color: #ffc857;
+  }
+  
+  #dept1_M1_carbonfootprint_value {
+    color: #db3a34;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+  } */
+
+  /* For departments dropdown */
+  
+  .dept1gsheet{
+    margin-top: 80px;
+    /* border-color: #009bd6;
+    border-width: 5px;
+    border-style: solid; */
+    height: 640px;
+
+  }
+
+  .dept1gsheet div{
+    text-align: center;
+  }
+
+  #dept1Dropdown, #dept2Dropdown, #dept3Dropdown{
+      transform: translatex(160px) translateY(-50px);
+      position: absolute;
+      display: none;
+  }
+
+  .dropbtn :nth-child(1):hover #dept1Dropdown{
+      display: block;
+  }
+
+  .dropbtn :nth-child(2):hover #dept1Dropdown{
+      display: block;
+  }
+
+  .dropbtn :nth-child(3):hover #dept1Dropdown{
+      display: block;
+  }
+
+  /* Adjusted dropdown positioning and initial hidden state */
+#dept1Dropdown, #dept2Dropdown, #dept3Dropdown {
+  transform: translateX(160px) translateY(-50px);
+  position: absolute;
+  display: none; /* Initially hide dropdowns */
+}
+
+
+

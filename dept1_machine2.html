@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CMetrics Dept1_M2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" async></script>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="/home.html">
+        <img src="/image/CMetrics LOGO.png" alt="CMetrics Logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/home.html">Home</a>
+        <div class="dropdown" onmouseover="toggleDropdown('deptDropdown')" onmouseleave="hideDropdown('deptDropdown')">
+            <a href="#departments" class="dropbtn">Departments</a>
+            <div class="dropdown-content" id="deptDropdown">
+              <a href="#" onmouseover="toggleDeptDropdown('dept1Dropdown')">Department 1</a>
+              <div class="dropdown-content" id="dept1Dropdown">
+                <a href="/dept1_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept1_machine1.html" onclick="navigateTo('department1_machine1.html')">Machine 1</a>
+                <a href="/dept1_machine2.html" onclick="navigateTo('department1_machine2.html')">Machine 2</a>
+                <a href="/dept1_machine3.html" onclick="navigateTo('department1_machine3.html')">Machine 3</a>
+              </div>
+              <a href="#" onmouseover="toggleDeptDropdown('dept2Dropdown')">Department 2</a>
+              <div class="dropdown-content" id="dept2Dropdown">
+                <a href="/dept2_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept2_machine1.html" onclick="navigateTo('department2_machine1.html')">Machine 1</a>
+                <a href="/dept2_machine2.html" onclick="navigateTo('department2_machine2.html')">Machine 2</a>
+                <a href="/dept2_machine3.html" onclick="navigateTo('department2_machine3.html')">Machine 3</a>
+              </div>
+              <a href="#" onmouseover="toggleDeptDropdown('dept3Dropdown')">Department 3</a>
+              <div class="dropdown-content" id="dept3Dropdown">
+                <a href="/dept3_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept3_machine1.html" onclick="navigateTo('department3_machine1.html')">Machine 1</a>
+                <a href="/dept3_machine2.html" onclick="navigateTo('department3_machine2.html')">Machine 2</a>
+                <a href="/dept3_machine3.html" onclick="navigateTo('department3_machine3.html')">Machine 3</a>
+              </div>
+            </div>
+          </div>
+      <!-- Analytics page new edit for dropdown -->
+      <div class="dropdown" onmouseover="toggleDropdown('analyticsDropdown')" onmouseleave="hideDropdown('analyticsDropdown')">
+        <a href="#analytics" class="dropbtn">Analytics</a>
+        <div class="dropdown-content" id="analyticsDropdown">
+          <a href="/overall_metrics.html">Overall Metrics</a>
+          <a href="/analytics_dept1.html">Department 1</a>
+          <a href="/analytics_dept2.html">Department 2</a>
+          <a href="/analytics_dept3.html">Department 3</a>
+        </div>
+      </div>
+  <!-- <a href="#analytics">Analytics</a> -->
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="dept1_M2_content">
+    <div id="dept1_M2_content">
+      <h1>XYZ Department</h1>
+      <p>it is an xyz department in xyz company, Here xyz machines are running with minimum Energy utilisation of xyz Watt hour and Maximum Energy utilisation of xyz Watt hour </p>
+      <p>To get the XYZ Machine_2 analytics data, Click the Button below 👇</p>
+      <div class="dept1_M2_analytics_btn">
+      <a href="/analytics_dept1_m2.html" style="--clr:#1e9bff"><span>Machine_2 Analytics</span></a>
+      <h2 style="margin-top: 75px; color:#009bd6;">Below is the Live ENERGY CONSUMPTION and CARBON FOOTPRINT</h2>
+    </div>
+    </div>
+  </div>
+
+  <div class="dept1_M2_datas_title">
+    <div id="dept1_M2_work">
+      <h4>WORKING HOURS</h4>
+    </div>
+    <div id="dept1_M2_energy">
+      <h4>ENERGY CONSUMPTION</h4>
+    </div>
+    <div id="dept1_M2_carbonfootprint">
+      <h4>CARBON FOOTPRINT</h4>
+    </div>
+  </div>
+  <div class="dept1_M2_data_value">
+    <div id="dept1_M2_working_value">
+      <h1 id="working_value0">--</h1>
+    </div>
+    <div id="dept1_M2_energy_value">
+      <h1 id="energy_value0">--</h1>
+    </div>
+    <div id="dept1_M2_carbonfootprint_value">
+      <h1 id="carbonfootprint_value0">--</h1>
+    </div>
+  </div>
+  <div class="dept1_M2_data_value_unit">
+    <div id="dept1_M2_working_value_unit">
+      <h4>HH:MM:SS</h4>
+    </div>
+    <div id="dept1_M2_energy_value_unit">
+      <h4>Watt hour</h4>
+    </div>
+    <div id="dept1_M2_carbonfootprint_value_unit">
+      <h4>Grams of CO2</h4>
+    </div>
+  </div>
+</body>
+</html>

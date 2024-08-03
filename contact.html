@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CMetrics_Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" async></script>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="/home.html">
+        <img src="/image/CMetrics LOGO.png" alt="CMetrics Logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/home.html">Home</a>
+        <div class="dropdown" onmouseover="toggleDropdown('deptDropdown')" onmouseleave="hideDropdown('deptDropdown')">
+            <a href="#departments" class="dropbtn">Departments</a>
+            <div class="dropdown-content" id="deptDropdown">
+              <a href="#" onmouseover="toggleDeptDropdown('dept1Dropdown')">Department 1</a>
+              <div class="dropdown-content" id="dept1Dropdown">
+                <a href="/dept1_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept1_machine1.html" onclick="navigateTo('department1_machine1.html')">Machine 1</a>
+                <a href="/dept1_machine2.html" onclick="navigateTo('department1_machine2.html')">Machine 2</a>
+                <a href="/dept1_machine3.html" onclick="navigateTo('department1_machine3.html')">Machine 3</a>
+              </div>
+              <a href="#" onmouseover="toggleDeptDropdown('dept2Dropdown')">Department 2</a>
+              <div class="dropdown-content" id="dept2Dropdown">
+                <a href="/dept2_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept2_machine1.html" onclick="navigateTo('department2_machine1.html')">Machine 1</a>
+                <a href="/dept2_machine2.html" onclick="navigateTo('department2_machine2.html')">Machine 2</a>
+                <a href="/dept2_machine3.html" onclick="navigateTo('department2_machine3.html')">Machine 3</a>
+              </div>
+              <a href="#" onmouseover="toggleDeptDropdown('dept3Dropdown')">Department 3</a>
+              <div class="dropdown-content" id="dept3Dropdown">
+                <a href="/dept3_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept3_machine1.html" onclick="navigateTo('department3_machine1.html')">Machine 1</a>
+                <a href="/dept3_machine2.html" onclick="navigateTo('department3_machine2.html')">Machine 2</a>
+                <a href="/dept3_machine3.html" onclick="navigateTo('department3_machine3.html')">Machine 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- Analytics page new edit for dropdown -->
+          <div class="dropdown" onmouseover="toggleDropdown('analyticsDropdown')" onmouseleave="hideDropdown('analyticsDropdown')">
+            <a href="#analytics" class="dropbtn">Analytics</a>
+            <div class="dropdown-content" id="analyticsDropdown">
+              <a href="/overall_metrics.html">Overall Metrics</a>
+              <a href="/analytics_dept1.html">Department 1</a>
+              <a href="/analytics_dept2.html">Department 2</a>
+              <a href="/analytics_dept3.html">Department 3</a>
+            </div>
+          </div>
+      <!-- <a href="#analytics">Analytics</a> -->
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="home_logo">
+        <img src="/image/Content Logo CMetrics.png" alt="CMetrics Logo" />
+    </div>
+    <div>
+      <h1>Energy Monitoring System to Notify Carbon Footprint</h1>
+      <p>"You Cannot Manage what you do not Measure"</p>
+    </div>
+    <div>
+        <h3 style="color: #db3a34;">Sponsered By,</h3>
+        <img src="/image/Forge Logo_Partner Incubator.png" alt="FORGE Innovation & Ventures" height="104px" width="240px" style="margin-left: 20px;">
+    </div>
+    <div style="margin-top:58px;">
+      <h3>Madurai Acme Enterprises Pvt Ltd  -  Rubber products supplier in Tamil Nadu</h3>
+      <p>BS3/2A, SIDCO Industrial estate, Kappalur, Tamil Nadu 625008. Phone: 098421 99515</p>
+    </div>
+    <p style="color: lightslategrey;" >&copy; 2024 Team CMetrics. All rights reserved.</p>
+  </div> 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CMetrics_Analytics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" async></script>
+</head>
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <a href="/home.html">
+        <img src="/image/CMetrics LOGO.png" alt="CMetrics Logo" />
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="/home.html">Home</a>
+        <div class="dropdown" onmouseover="toggleDropdown('deptDropdown')" onmouseleave="hideDropdown('deptDropdown')">
+            <a href="#departments" class="dropbtn">Departments</a>
+            <div class="dropdown-content" id="deptDropdown">
+              <a href="#" onmouseover="toggleDeptDropdown('dept1Dropdown')">Department 1</a>
+              <div class="dropdown-content" id="dept1Dropdown">
+                <a href="/dept1_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept1_machine1.html" onclick="navigateTo('department1_machine1.html')">Machine 1</a>
+                <a href="/dept1_machine2.html" onclick="navigateTo('department1_machine2.html')">Machine 2</a>
+                <a href="/dept1_machine3.html" onclick="navigateTo('department1_machine3.html')">Machine 3</a>
+              </div>
+              <a href="#" onmouseover="toggleDeptDropdown('dept2Dropdown')">Department 2</a>
+              <div class="dropdown-content" id="dept2Dropdown">
+                <a href="/dept2_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept2_machine1.html" onclick="navigateTo('department2_machine1.html')">Machine 1</a>
+                <a href="/dept2_machine2.html" onclick="navigateTo('department2_machine2.html')">Machine 2</a>
+                <a href="/dept2_machine3.html" onclick="navigateTo('department2_machine3.html')">Machine 3</a>
+              </div>
+              <a href="#" onmouseover="toggleDeptDropdown('dept3Dropdown')">Department 3</a>
+              <div class="dropdown-content" id="dept3Dropdown">
+                <a href="/dept3_overall_data.html" onclick="navigateTo('#')">Overall data</a>
+                <a href="/dept3_machine1.html" onclick="navigateTo('department3_machine1.html')">Machine 1</a>
+                <a href="/dept3_machine2.html" onclick="navigateTo('department3_machine2.html')">Machine 2</a>
+                <a href="/dept3_machine3.html" onclick="navigateTo('department3_machine3.html')">Machine 3</a>
+              </div>
+            </div>
+          </div>
+          <!-- Analytics page new edit for dropdown -->
+          <div class="dropdown" onmouseover="toggleDropdown('analyticsDropdown')" onmouseleave="hideDropdown('analyticsDropdown')">
+            <a href="#analytics" class="dropbtn">Analytics</a>
+            <div class="dropdown-content" id="analyticsDropdown">
+              <a href="/overall_metrics.html">Overall Metrics</a>
+              <a href="/analytics_dept1.html">Department 1</a>
+              <a href="/analytics_dept2.html">Department 2</a>
+              <a href="/analytics_dept3.html">Department 3</a>
+            </div>
+          </div>
+      <!-- <a href="#analytics">Analytics</a> -->
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="analytics_content">
+    <div id="analytics_content">
+      <h1>XYZ Department</h1>
+      <p>it is an xyz department in xyz company, Here xyz kind of machines are running with minimum Energy utilisation of xyz Watt hour and Maximum Energy utilisation of xyz Watt hour </p>
+      <p>To get the XYZ Department analytics data, Click the Button below 👇</p>
+      <div class="dept1_analytics_btn">
+      <a href="/analytics_dept2_overall.html" style="--clr:#1e9bff"><span>Department_2 Analytics</span></a>
+    </div>
+    </div>
+    
+    <div class="machine_images">
+      <div class="machine1_img">
+        <img src="/image/dept2_machine1.png" alt="machine1.png" height="240px" width="240px">
+      </div>
+      <div class="machine2_img">
+        <img src="/image/dept2_machine2.png" alt="machine2.png" height="230px" width="230px">
+      </div>
+      <div class="machine3_img">
+        <img src="/image/dept2_machine3.png" alt="machine3.png" height="250px" width="250px">
+      </div>
+    </div>
+
+    <div class="machine_analytics_btn">
+      <a href="/analytics_dept2_m1.html" style="--clr:#1e9bff"><span>Machine_1 Analytics</span></a>
+      <a href="/analytics_dept2_m2.html" style="--clr:#1e9bff"><span>Machine_2 Analytics</span></a>
+      <a href="/analytics_dept2_m3.html" style="--clr:#1e9bff"><span>Machine_3 Analytics</span></a>
+    </div>
+    
+  </div>
+</body>
+</html>
+
